@@ -29,6 +29,45 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get('/expenses')
+def send_expenses():
+    return expenses
+
+@app.post('/expenses')
+def add_expense(expense: Expense):
+
+    # Because we can also remove the expenses now, we can't simply use the length of the list for the id for the next element to be added. Instead, we could use the (id of the last element) + 1
+    new_expense_id = expenses[-1]["id"] + 1
+
+    new_expense = {
+        "id": new_expense_id,
+        **expense.dict()
+    }
+
+    expenses.append(new_expense)
+
+    with open("./expenses.json", "w") as file:
+        json.dump(expenses, file, indent = 4)
+
+    
+@app.delete('/expenses/{id}')
+def remove_expense(id: int):
+
+    global expenses
+
+    new_expenses = [
+        expense for expense in expenses
+        if expense["id"] != id
+    ]
+
+    expenses = new_expenses
+
+    with open("./expenses.json", "w") as file:
+        json.dump(new_expenses, file, indent = 4)
+
+
+
+
     
 
 

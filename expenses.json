@@ -48,15 +48,5 @@
         "id": 10,
         "name": "Phone Bill",
         "amount": 60
-    },
-    {
-        "id": 11,
-        "name": "wwqqqw",
-        "amount": 123
-    },
-    {
-        "id": 12,
-        "name": "Another item",
-        "amount": 345
     }
 ]
