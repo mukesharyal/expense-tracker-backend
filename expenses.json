@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Groceries",
+        "amount": 85
+    },
+    {
+        "id": 2,
+        "name": "Rent",
+        "amount": 1200
+    },
+    {
+        "id": 3,
+        "name": "Electricity Bill",
+        "amount": 65
+    },
+    {
+        "id": 4,
+        "name": "Internet",
+        "amount": 45
+    },
+    {
+        "id": 5,
+        "name": "Gas",
+        "amount": 55
+    },
+    {
+        "id": 6,
+        "name": "Dining Out",
+        "amount": 32
+    },
+    {
+        "id": 7,
+        "name": "Movie Tickets",
+        "amount": 28
+    },
+    {
+        "id": 8,
+        "name": "Gym Membership",
+        "amount": 40
+    },
+    {
+        "id": 9,
+        "name": "Coffee",
+        "amount": 7
+    },
+    {
+        "id": 10,
+        "name": "Phone Bill",
+        "amount": 60
+    },
+    {
+        "id": 11,
+        "name": "wwqqqw",
+        "amount": 123
+    },
+    {
+        "id": 12,
+        "name": "Another item",
+        "amount": 345
+    }
+]
